@@ -13,3 +13,11 @@
 .\objects\usb.o: .\Include\buffer_descriptor.h
 .\objects\usb.o: .\Include\LEDs.h
 .\objects\usb.o: C:\Keil_v528a\ARM\ARMCC\Bin\..\include\string.h
+.\objects\usb.o: C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h
+.\objects\usb.o: .\Include\threads.h
+.\objects\usb.o: .\Source\LCD\LCD_driver.h
+.\objects\usb.o: C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.H
+.\objects\usb.o: .\Source\LCD\LCD.h
+.\objects\usb.o: .\Include\misc.h
+.\objects\usb.o: C:\Keil_v528a\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\usb.o: C:\Keil_v528a\ARM\ARMCC\Bin\..\include\stdlib.h

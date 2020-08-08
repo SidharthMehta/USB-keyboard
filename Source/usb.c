@@ -5,12 +5,20 @@
 #include "endpoint.h"
 #include "LEDs.h"
 #include <string.h>
+#include <cmsis_os2.h>
+#include "threads.h"
+#include "LCD.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 // USB doesn't have a dedicted memory block as a result we have to provide it. Pg. 616 of reference manual for more details
 __attribute((aligned(512))) buffer_descriptor_t buffer_descriptor_table[BD_NUM];
 
 static uint8_t endpoint_0_rx_buf[2][ENDPOINT0_SIZE];
-
+static uint8_t endpoint_1_rx_buf[2][ENDPOINT1_SIZE];
+static uint8_t endpoint_1_tx_buf[2][ENDPOINT1_SIZE];
+static uint8_t endpoint_2_rx_buf[2][ENDPOINT2_SIZE];
+static uint8_t endpoint_2_tx_buf[2][ENDPOINT2_SIZE];
 /*
 Each USB device has a number of endpoints. Each endpoint is a source or sink of data. A device can have up to 16 OUT and 16 IN endpoints.
 OUT always means from host to device.
@@ -28,11 +36,36 @@ static endpoint_t endpoint0 =
 		.tx_data = NULL,
 		.buffer_size = ENDPOINT0_SIZE,
 		.handler = usb0_endpoint0_handler};
+	
+static endpoint_t endpoint1 =
+	{
+		.rx_buffer_even = endpoint_1_rx_buf[0],
+		.rx_buffer_odd = endpoint_1_rx_buf[1],
+		.tx_buffer_even = endpoint_1_tx_buf[0],
+		.tx_buffer_odd = endpoint_1_tx_buf[1],
+		.tx_buffer = EVEN,
+		.tx_data01_field = DATA0,
+		.tx_data = NULL,
+		.buffer_size = ENDPOINT1_SIZE,
+		.handler = usb0_endpoint1_handler};
 
+static endpoint_t endpoint2 =
+	{
+		.rx_buffer_even = endpoint_2_rx_buf[0],
+		.rx_buffer_odd = endpoint_2_rx_buf[1],
+		.tx_buffer_even = endpoint_2_tx_buf[0],
+		.tx_buffer_odd = endpoint_2_tx_buf[1],
+		.tx_buffer = EVEN,
+		.tx_data01_field = DATA0,
+		.tx_data = NULL,
+		.buffer_size = ENDPOINT2_SIZE,
+		.handler = usb0_endpoint2_handler};
+	
 // Endpoint is a source or sink of data
 endpoint_t *endpoints[NUM_ENDPOINTS] =
 	{
 		&endpoint0,
+		NULL,
 		NULL};
 
 void USB_SetEndpoint(uint8_t index, endpoint_t *endpoint)
@@ -173,7 +206,7 @@ static void usb0_endpoint0_handler(uint8_t endpoint_number, uint8_t token_pid, b
 	case PID_SETUP:
 		// Extract the setup packet. This defines the request, and specifies whether and how much data should be transferred in the DATA stage.
 		memcpy((void *)&setup, bd->address, sizeof(usb_setup_packet_t));
-
+	
 		//clear any pending IN stuff
 		buffer_descriptor_table[BDT_INDEX(0, TX, EVEN)].field = 0;
 		buffer_descriptor_table[BDT_INDEX(0, TX, ODD)].field = 0;
@@ -181,7 +214,7 @@ static void usb0_endpoint0_handler(uint8_t endpoint_number, uint8_t token_pid, b
 		ep->tx_data01_field = DATA1;
 
 		// SEND and STALL are handshake signals
-		if (usb_endp_setup_handler(0, &setup) == SEND)
+		if (usb_endp_setup_handler(endpoint_number, &setup) == SEND)
 		{
 			/* truncate data length */
 			if (ep->tx_data_length > setup.wLength)
@@ -190,10 +223,10 @@ static void usb0_endpoint0_handler(uint8_t endpoint_number, uint8_t token_pid, b
 			}
 			/*prepare two buffers with the answer*/
 			// This facilitates DATA STAGE of control read
-			usb_endpoint_prepare_transmit(0);
+			usb_endpoint_prepare_transmit(endpoint_number);
 			if (ep->tx_data_length > 0)
 			{
-				usb_endpoint_prepare_transmit(0);
+				usb_endpoint_prepare_transmit(endpoint_number);
 			}
 		}
 		else
@@ -223,9 +256,126 @@ static void usb0_endpoint0_handler(uint8_t endpoint_number, uint8_t token_pid, b
 		}
 		break;
 	case PID_OUT:
+		if(setup.wLength > 0 && setup.request.wRequestAndType == 0x0921)		
+		{
+//			ep->tx_data01_field = DATA1;
+//			bd->field = BD_SET_FIELD(setup.wLength,DATA1);
+		}
 		break;
 	case PID_SOF:
 		break;
+	}
+}
+
+static void usb0_endpoint1_handler(uint8_t endpoint_number, uint8_t token_pid, buffer_descriptor_t *bd)
+{
+	endpoint_t *ep = endpoints[endpoint_number];
+	switch (token_pid)
+	{
+	case PID_SETUP:
+		Control_RGB_LEDs(0, 0, 1);
+		break;
+	case PID_IN:
+		if(ep->tx_data_length > 0)
+		{		
+			usb_endpoint_prepare_transmit(1);
+		}
+		osEventFlagsSet(e_USB_keyboard_transmit, 1);
+		Control_RGB_LEDs(0, 1, 0);
+		break;
+	case PID_OUT:
+		Control_RGB_LEDs(0, 1, 1);
+		break;
+	case PID_SOF:
+		Control_RGB_LEDs(1, 0, 0);
+		break;
+	default:
+		Control_RGB_LEDs(1, 0, 1);
+		break;
+	}
+}
+
+static void usb0_endpoint2_handler(uint8_t endpoint_number, uint8_t token_pid, buffer_descriptor_t *bd)
+{
+	endpoint_t *ep = endpoints[endpoint_number];
+	switch (token_pid)
+	{
+	case PID_SETUP:
+		Control_RGB_LEDs(0, 0, 1);
+		break;
+	case PID_IN:
+		if(ep->tx_data_length > 0)
+		{		
+			usb_endpoint_prepare_transmit(1);
+		}
+		osEventFlagsSet(e_USB_mouse_transmit, 1);
+		Control_RGB_LEDs(0, 1, 0);
+		break;
+	case PID_OUT:
+		Control_RGB_LEDs(0, 1, 1);
+		break;
+	case PID_SOF:
+		Control_RGB_LEDs(1, 0, 0);
+		break;
+	default:
+		Control_RGB_LEDs(1, 0, 1);
+		break;
+	}
+}
+
+void Thread_USB_keyboard(void * arg)
+{
+	keyboard k;
+	uint8_t report[8] = {0,0,0,0,0,0,0,0};
+	USB_SetEndpoint(1, &endpoint1);
+	while(1)
+	{
+		osMessageQueueGet(m_USB_keyboard_transmit, &k, 0, osWaitForever);
+		report[0] = k.modifier;
+		report[2] = k.key; 
+		endpoint1.tx_data = report;
+		endpoint1.tx_data_length = ENDPOINT1_SIZE;
+		osEventFlagsClear(e_USB_keyboard_transmit, 1);
+		usb_endpoint_prepare_transmit(1);		
+		osEventFlagsWait(e_USB_keyboard_transmit, 1, osFlagsWaitAll, osWaitForever);
+		
+		report[0] = 0;
+		report[2] = 0; 
+		endpoint1.tx_data = report;
+		endpoint1.tx_data_length = ENDPOINT1_SIZE;
+		osEventFlagsClear(e_USB_keyboard_transmit, 1);
+		usb_endpoint_prepare_transmit(1);
+		osEventFlagsWait(e_USB_keyboard_transmit, 1, osFlagsWaitAll, osWaitForever);
+		osDelay(THREAD_USB_KEYBOARD_PERIOD_MS);
+	}
+}
+
+void Thread_USB_mouse(void * arg)
+{
+	mouse m;
+	uint8_t report[3];
+	USB_SetEndpoint(2, &endpoint2);
+	while(1)
+	{
+		osMessageQueueGet(m_USB_mouse_transmit, &m, 0, osWaitForever);
+		report[0] = m.buttons;
+		report[1] = m.x;
+		report[2] = m.y;
+		endpoint2.tx_data = report;
+		endpoint2.tx_data_length = ENDPOINT2_SIZE;
+		osEventFlagsClear(e_USB_mouse_transmit, 1);
+		usb_endpoint_prepare_transmit(2);		
+		osEventFlagsWait(e_USB_mouse_transmit, 1, osFlagsWaitAll, osWaitForever);
+		
+		report[0] = 0;
+		report[1] = m.x;
+		report[2] = m.y;
+		endpoint2.tx_data = report;
+		endpoint2.tx_data_length = ENDPOINT2_SIZE;
+		osEventFlagsClear(e_USB_mouse_transmit, 1);
+		usb_endpoint_prepare_transmit(2);
+		osEventFlagsWait(e_USB_mouse_transmit, 1, osFlagsWaitAll, osWaitForever);
+		osDelay(THREAD_USB_MOUSE_PERIOD_MS);
 	}
 }
 
@@ -235,24 +385,11 @@ static enum setup_state usb_endp_setup_handler(uint8_t endpoint_number, usb_setu
 
 	switch (packet->request.wRequestAndType)
 	{
-	case 0xA101: // GET_REPORT
+	case 0x0900: // SET_CONFIGURATION, we only have one configuration at this time
+	case 0x0921: // SET_REPORT
+	case 0x0500: // SET_ADDRESS (wait for IN packet)
 		break;
-	case 0xA102: // GET_IDLE
-		break;
-	case 0xA103: // GET_PROTOCOL
-		break;
-	case 0x2109: // SET_REPORT
-		break;
-	case 0x210A: // SET_IDLE
-		break;
-	case 0x210B: //SET_PROTOCOL
-		break;
-	case 0x0500: //set address (wait for IN packet)
-		break;
-	case 0x0900: //set configuration
-		//we only have one configuration at this time
-		break;
-	case 0x0680: //get descriptor
+	case 0x0680: // GET_DESCRIPTOR
 	case 0x0681:
 		if ((packet->wValue & (USB_DESCRIPTOR_TYPE_STRING << 8)) == (USB_DESCRIPTOR_TYPE_STRING << 8))
 		{
@@ -261,7 +398,8 @@ static enum setup_state usb_endp_setup_handler(uint8_t endpoint_number, usb_setu
 			Manufacturer String
 			Product String
 			Serial Number String
-			These strings are optional. If not supported, the corresponding index in the device descriptor will be 0. Otherwise the host may use the specified index in a Get Descriptor (String) request to fetch the descriptor.
+			These strings are optional. If not supported, the corresponding index in the device descriptor will be 0. 
+			Otherwise the host may use the specified index in a Get Descriptor (String) request to fetch the descriptor.
 			*/
 			uint8_t index = packet->wValue & 0x00FF;
 			if (index < STRING_DESCRIPTORS)
@@ -281,16 +419,29 @@ static enum setup_state usb_endp_setup_handler(uint8_t endpoint_number, usb_setu
 			ep->tx_data = (uint8_t *)&configuration;
 			ep->tx_data_length = sizeof(configuration);
 		}
-		else if (packet->wValue == (USB_DESCRIPTOR_TYPE_HID_REPORT << 8))
+		else if ((packet->wValue & 0xFF00) == (USB_DESCRIPTOR_TYPE_HID_REPORT << 8))
 		{
-			ep->tx_data = (uint8_t *)&report_descriptor;
-			ep->tx_data_length = sizeof(report_descriptor);
+			if(packet->wIndex == 0)
+			{
+				ep->tx_data = (uint8_t *)&report_descriptor_keyboard;
+				ep->tx_data_length = sizeof(report_descriptor_keyboard);
+			}
+			else if(packet->wIndex == 1)
+			{
+				ep->tx_data = (uint8_t *)&report_descriptor_mouse;
+				ep->tx_data_length = sizeof(report_descriptor_mouse);
+			}		
 		}
 		else
 		{
 			return STALL;
 		}
 		break;
+	case 0x01A1: // GET_REPORT
+	case 0x02A1: // GET_IDLE
+	case 0x03A1: // GET_PROTOCOL
+	case 0x0A21: // SET_IDLE
+	case 0x0B21: // SET_PROTOCOL
 	default:
 		return STALL;
 	}

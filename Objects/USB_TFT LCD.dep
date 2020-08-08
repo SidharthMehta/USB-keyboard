@@ -1,0 +1,568 @@
+Dependencies for Project 'USB', Target 'TFT LCD': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
+F (.\Source\delay.c)(0x5E794957)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.H)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+F (.\Source\LEDs.c)(0x5E794957)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\leds.o --omf_browse .\objects\leds.crf --depend .\objects\leds.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.H)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (.\Include\LEDs.h)(0x5E794957)
+I (.\Include\gpio_defs.h)(0x5E794957)
+F (.\Source\main.c)(0x5F2F11DC)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.H)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdio.h)(0x5D9B88EA)
+I (.\Include\gpio_defs.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\Include\threads.h)(0x5EE3F82E)
+I (.\Source\LCD\LCD_driver.h)(0x5E794957)
+I (.\Source\LCD\LCD.h)(0x5E794957)
+I (.\Include\misc.h)(0x5E794957)
+I (.\Source\LCD\font.h)(0x5E794957)
+I (.\Include\LEDs.h)(0x5E794957)
+I (.\Include\timers.h)(0x5E794957)
+I (.\Include\delay.h)(0x5E794957)
+I (.\Source\Profiler\profile.h)(0x5E794958)
+I (C:\Keil_v528a\ARM\ARMCC\include\math.h)(0x5D9B88E2)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\Include\I2C.h)(0x5E9506A5)
+I (.\Include\mma8451.h)(0x5E9506A5)
+I (.\Include\usb_config.h)(0x5EED3187)
+I (.\Include\descriptor.h)(0x5EE3F145)
+I (.\Include\endpoint.h)(0x5EE3F28A)
+I (.\Include\buffer_descriptor.h)(0x5EB89298)
+F (.\Source\threads.c)(0x5F2F102C)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\threads.o --omf_browse .\objects\threads.crf --depend .\objects\threads.d)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdio.h)(0x5D9B88EA)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (.\Source\LCD\LCD.h)(0x5E794957)
+I (.\Include\misc.h)(0x5E794957)
+I (.\Source\LCD\touchscreen.h)(0x5E794957)
+I (.\Source\LCD\LCD_driver.h)(0x5E794957)
+I (.\Source\LCD\font.h)(0x5E794957)
+I (.\Include\threads.h)(0x5EE3F82E)
+I (.\Include\MMA8451.h)(0x5E9506A5)
+I (.\Include\gpio_defs.h)(0x5E794957)
+I (.\Include\debug.h)(0x5E824AFC)
+I (.\Include\usb_config.h)(0x5EED3187)
+I (.\Include\descriptor.h)(0x5EE3F145)
+I (.\Include\endpoint.h)(0x5EE3F28A)
+I (.\Include\buffer_descriptor.h)(0x5EB89298)
+I (.\Include\LEDs.h)(0x5E794957)
+I (.\Source\LCD\ST7789.h)(0x5E794957)
+I (.\Source\LCD\T6963.h)(0x5E794957)
+F (.\Source\timers.c)(0x5F2F11D5)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 -Otime --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
+I (.\Include\timers.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (.\Source\Profiler\region.h)(0x5E794958)
+I (.\Source\Profiler\profile.h)(0x5E794958)
+F (.\Source\debug.c)(0x5E794957)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\debug.o --omf_browse .\objects\debug.crf --depend .\objects\debug.d)
+I (.\Include\debug.h)(0x5E824AFC)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+F (.\Source\new_events.c)(0x5E794957)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\new_events.o --omf_browse .\objects\new_events.crf --depend .\objects\new_events.d)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+I (.\Include\debug.h)(0x5E824AFC)
+I (Source\new_events.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+F (.\Source\descriptor.c)(0x5EE3F393)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\descriptor.o --omf_browse .\objects\descriptor.crf --depend .\objects\descriptor.d)
+I (.\Include\descriptor.h)(0x5EE3F145)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\Include\endpoint.h)(0x5EE3F28A)
+I (.\Include\buffer_descriptor.h)(0x5EB89298)
+F (.\Source\usb.c)(0x5F2F105E)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\usb.o --omf_browse .\objects\usb.crf --depend .\objects\usb.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (.\Include\usb_config.h)(0x5EED3187)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\Include\descriptor.h)(0x5EE3F145)
+I (.\Include\endpoint.h)(0x5EE3F28A)
+I (.\Include\buffer_descriptor.h)(0x5EB89298)
+I (.\Include\LEDs.h)(0x5E794957)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (.\Include\threads.h)(0x5EE3F82E)
+I (.\Source\LCD\LCD_driver.h)(0x5E794957)
+I (.\Source\LCD\LCD.h)(0x5E794957)
+I (.\Include\misc.h)(0x5E794957)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdio.h)(0x5D9B88EA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdlib.h)(0x5D9B88EA)
+F (.\Source\I2C.c)(0x5E794957)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.H)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (.\Include\i2c.h)(0x5E9506A5)
+I (.\Include\debug.h)(0x5E824AFC)
+F (.\Source\MMA8451.c)(0x5E9506A5)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\mma8451.o --omf_browse .\objects\mma8451.crf --depend .\objects\mma8451.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.H)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (.\Include\MMA8451.h)(0x5E9506A5)
+I (.\Include\I2C.h)(0x5E9506A5)
+I (.\Include\delay.h)(0x5E794957)
+I (.\Include\LEDs.h)(0x5E794957)
+I (C:\Keil_v528a\ARM\ARMCC\include\math.h)(0x5D9B88E2)
+F (.\Source\LCD\lucida_8x13.c)(0x5E794957)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\lucida_8x13.o --omf_browse .\objects\lucida_8x13.crf --depend .\objects\lucida_8x13.d)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+F (.\Source\LCD\lucida_12x19.c)(0x5E794957)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\lucida_12x19.o --omf_browse .\objects\lucida_12x19.crf --depend .\objects\lucida_12x19.d)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+F (.\Source\LCD\lucida_20x31.c)(0x5E794957)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\lucida_20x31.o --omf_browse .\objects\lucida_20x31.crf --depend .\objects\lucida_20x31.d)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+F (.\Source\LCD\LCD_graphics.c)(0x5E794957)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\lcd_graphics.o --omf_browse .\objects\lcd_graphics.crf --depend .\objects\lcd_graphics.d)
+I (Source\LCD\LCD.h)(0x5E794957)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (.\Include\misc.h)(0x5E794957)
+I (Source\LCD\LCD_driver.h)(0x5E794957)
+I (Source\LCD\ST7789.h)(0x5E794957)
+I (Source\LCD\T6963.h)(0x5E794957)
+F (.\Source\LCD\LCD_text.c)(0x5E794957)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\lcd_text.o --omf_browse .\objects\lcd_text.crf --depend .\objects\lcd_text.d)
+I (Source\LCD\font.h)(0x5E794957)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (Source\LCD\LCD.h)(0x5E794957)
+I (.\Include\misc.h)(0x5E794957)
+I (Source\LCD\LCD_driver.h)(0x5E794957)
+I (Source\LCD\ST7789.h)(0x5E794957)
+I (Source\LCD\T6963.h)(0x5E794957)
+I (.\Include\delay.h)(0x5E794957)
+F (.\Source\LCD\T6963.c)(0x5E794957)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\t6963.o --omf_browse .\objects\t6963.crf --depend .\objects\t6963.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (Source\LCD\LCD.h)(0x5E794957)
+I (.\Include\misc.h)(0x5E794957)
+I (Source\LCD\LCD_driver.h)(0x5E794957)
+I (Source\LCD\font.h)(0x5E794957)
+I (.\Include\gpio_defs.h)(0x5E794957)
+I (.\Include\timers.h)(0x5E794957)
+F (.\Source\LCD\touchscreen.c)(0x5E7ACE49)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\touchscreen.o --omf_browse .\objects\touchscreen.crf --depend .\objects\touchscreen.d)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdio.h)(0x5D9B88EA)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (Source\LCD\LCD.h)(0x5E794957)
+I (.\Include\misc.h)(0x5E794957)
+I (Source\LCD\LCD_driver.h)(0x5E794957)
+I (Source\LCD\ST7789.h)(0x5E794957)
+I (Source\LCD\T6963.h)(0x5E794957)
+I (Source\LCD\font.h)(0x5E794957)
+I (.\Include\gpio_defs.h)(0x5E794957)
+I (.\Include\timers.h)(0x5E794957)
+I (.\Include\debug.h)(0x5E824AFC)
+F (.\Source\LCD\ST7789.c)(0x5E794957)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\st7789.o --omf_browse .\objects\st7789.crf --depend .\objects\st7789.d)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdio.h)(0x5D9B88EA)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (Source\LCD\LCD.h)(0x5E794957)
+I (.\Include\misc.h)(0x5E794957)
+I (Source\LCD\LCD_driver.h)(0x5E794957)
+I (Source\LCD\font.h)(0x5E794957)
+I (.\Include\gpio_defs.h)(0x5E794957)
+I (.\Include\timers.h)(0x5E794957)
+I (Source\LCD\ST7789.h)(0x5E794957)
+F (.\Source\Profiler\profile.c)(0x5E794958)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\profile.o --omf_browse .\objects\profile.crf --depend .\objects\profile.d)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdio.h)(0x5D9B88EA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (.\Include\timers.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (Source\Profiler\region.h)(0x5E794958)
+I (Source\Profiler\profile.h)(0x5E794958)
+F (.\Source\Profiler\region.c)(0x5E794958)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\region.o --omf_browse .\objects\region.crf --depend .\objects\region.d)
+I (Source\Profiler\region.h)(0x5E794958)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\ARM\irq_cm0.s)(0x5B1FF4EC)(--cpu Cortex-M0+ --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "MKL25Z128xxx4 SETA 1"-o .\objects\irq_cm0.o --depend .\objects\irq_cm0.d)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_delay.c)(0x5C9004A4)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_delay.o --omf_browse .\objects\rtx_delay.crf --depend .\objects\rtx_delay.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x5C8FCE90)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x5C8FCE96)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x5C8FCE94)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdbool.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\os_tick.h)(0x5B622754)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_evflags.c)(0x5C9004A4)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_evflags.o --omf_browse .\objects\rtx_evflags.crf --depend .\objects\rtx_evflags.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x5C8FCE90)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x5C8FCE96)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x5C8FCE94)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdbool.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\os_tick.h)(0x5B622754)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_evr.c)(0x5C9004A4)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_evr.o --omf_browse .\objects\rtx_evr.crf --depend .\objects\rtx_evr.d)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_kernel.c)(0x5C9004A4)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_kernel.o --omf_browse .\objects\rtx_kernel.crf --depend .\objects\rtx_kernel.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x5C8FCE90)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x5C8FCE96)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x5C8FCE94)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdbool.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\os_tick.h)(0x5B622754)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.c)(0x5D264788)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_lib.o --omf_browse .\objects\rtx_lib.crf --depend .\objects\rtx_lib.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_memory.c)(0x5C8FCE90)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_memory.o --omf_browse .\objects\rtx_memory.crf --depend .\objects\rtx_memory.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x5C8FCE90)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x5C8FCE96)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x5C8FCE94)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdbool.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\os_tick.h)(0x5B622754)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_mempool.c)(0x5C8FCE8E)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_mempool.o --omf_browse .\objects\rtx_mempool.crf --depend .\objects\rtx_mempool.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x5C8FCE90)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x5C8FCE96)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x5C8FCE94)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdbool.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\os_tick.h)(0x5B622754)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_msgqueue.c)(0x5C9004A4)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_msgqueue.o --omf_browse .\objects\rtx_msgqueue.crf --depend .\objects\rtx_msgqueue.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x5C8FCE90)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x5C8FCE96)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x5C8FCE94)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdbool.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\os_tick.h)(0x5B622754)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_mutex.c)(0x5D264788)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_mutex.o --omf_browse .\objects\rtx_mutex.crf --depend .\objects\rtx_mutex.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x5C8FCE90)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x5C8FCE96)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x5C8FCE94)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdbool.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\os_tick.h)(0x5B622754)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_semaphore.c)(0x5C8FCE8C)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_semaphore.o --omf_browse .\objects\rtx_semaphore.crf --depend .\objects\rtx_semaphore.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x5C8FCE90)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x5C8FCE96)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x5C8FCE94)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdbool.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\os_tick.h)(0x5B622754)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_system.c)(0x5C9004A4)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_system.o --omf_browse .\objects\rtx_system.crf --depend .\objects\rtx_system.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x5C8FCE90)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x5C8FCE96)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x5C8FCE94)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdbool.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\os_tick.h)(0x5B622754)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_thread.c)(0x5D264788)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_thread.o --omf_browse .\objects\rtx_thread.crf --depend .\objects\rtx_thread.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x5C8FCE90)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x5C8FCE96)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x5C8FCE94)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdbool.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\os_tick.h)(0x5B622754)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_timer.c)(0x5C9004A4)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_timer.o --omf_browse .\objects\rtx_timer.crf --depend .\objects\rtx_timer.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x5C8FCE90)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x5C8FCE96)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x5C8FCE94)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdbool.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\os_tick.h)(0x5B622754)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (.\RTE\CMSIS\RTX_Config.h)(0x5E794957)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D264788)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Source\os_systick.c)(0x5B1FF4EC)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\os_systick.o --omf_browse .\objects\os_systick.crf --depend .\objects\os_systick.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\os_tick.h)(0x5B622754)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+F (RTE\CMSIS\RTX_Config.c)(0x5E7D1E61)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\rtx_config.o --omf_browse .\objects\rtx_config.crf --depend .\objects\rtx_config.d)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D264788)
+I (C:\Keil_v528a\ARM\ARMCC\include\stddef.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FCE68)
+I (.\Include\debug.h)(0x5E824AFC)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.H)(0x585C24CA)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+F (RTE\CMSIS\RTX_Config.h)(0x5E794957)()
+F (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Source\EventRecorder.c)(0x5B90074E)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\eventrecorder.o --omf_browse .\objects\eventrecorder.crf --depend .\objects\eventrecorder.d)
+I (.\RTE\_TFT_LCD\RTE_Components.h)(0x5F2F10F0)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+I (C:\Keil_v528a\ARM\ARMCC\include\string.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include\EventRecorder.h)(0x5B90074E)
+I (.\RTE\Compiler\EventRecorderConf.h)(0x5E794957)
+F (RTE\Compiler\EventRecorderConf.h)(0x5E794957)()
+F (RTE\Device\MKL25Z128xxx4\startup_MKL25Z4.s)(0x5E794957)(--cpu Cortex-M0+ --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "MKL25Z128xxx4 SETA 1"-o .\objects\startup_mkl25z4.o --depend .\objects\startup_mkl25z4.d)
+F (RTE\Device\MKL25Z128xxx4\system_MKL25Z4.c)(0x5E794957)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Include -I .\Source\LCD -I .\Source\Profiler --fpmode=fast-I.\RTE\CMSIS-I.\RTE\Compiler-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_TFT_LCD-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.2\Include-IC:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4 -DCLOCK_SETUP="4"-o .\objects\system_mkl25z4.o --omf_browse .\objects\system_mkl25z4.crf --depend .\objects\system_mkl25z4.d)
+I (C:\Keil_v528a\ARM\ARMCC\include\stdint.h)(0x5D9B88E8)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include\MKL25Z4.h)(0x585C24CA)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D264786)
+I (C:\Users\sidha\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D264786)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)
+F (RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5EDEC526)()

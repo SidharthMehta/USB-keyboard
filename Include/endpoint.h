@@ -6,7 +6,8 @@
 
 #define ENDPOINT0_SIZE 64
 #define ENDPOINT1_SIZE 8
-#define NUM_ENDPOINTS 2
+#define ENDPOINT2_SIZE 3
+#define NUM_ENDPOINTS 3
 #define BD_NUM (NUM_ENDPOINTS * 4)
 
 enum EpBufferDirection

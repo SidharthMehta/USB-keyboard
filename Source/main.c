@@ -1,85 +1,64 @@
-#include "MKL25Z4.h"
-#include "usb_config.h"
+/*----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------*/
+#include <MKL25Z4.H>
+#include <stdio.h>
+#include "gpio_defs.h"
+#include <cmsis_os2.h>
+#include "threads.h"
+
+#include "LCD.h"
+#include "LCD_driver.h"
+#include "font.h"
+
 #include "LEDs.h"
-#include "endpoint.h"
-#include "buffer_descriptor.h"
+#include "timers.h"
+#include "delay.h"
+#include "profile.h"
+#include "math.h"
+#include "EventRecorder.h"
+#include "I2C.h"
+#include "mma8451.h"
 
-extern __attribute((aligned(512))) buffer_descriptor_t buffer_descriptor_table[BD_NUM];
-static void endpoint1_handler(uint8_t endpoint_number, uint8_t token_pid, buffer_descriptor_t *bd);
-extern endpoint_t *endpoints[NUM_ENDPOINTS];
-static uint8_t endpoint_1_rx_buf[2][ENDPOINT1_SIZE];
-static uint8_t endpoint_1_tx_buf[2][ENDPOINT1_SIZE];
-volatile uint8_t wait = 1;
+#include "usb_config.h"
+/*
+Changes to make for lab code
+Remove RTOS calls for delay, semaphore, mutex, message queue, etc.
+Remove debug set/clear statements
 
-uint8_t report[8][8] = {
-	{0x00, 0x00, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00},
-	{0x00, 0x00, 0x05, 0x00, 0x00, 0x00, 0x00, 0x00},
-	{0x00, 0x00, 0x06, 0x00, 0x00, 0x00, 0x00, 0x00},
-	{0x00, 0x00, 0x07, 0x00, 0x00, 0x00, 0x00, 0x00},
-	{0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00},
-	{0x00, 0x00, 0x09, 0x00, 0x00, 0x00, 0x00, 0x00},
-	{0x00, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x00, 0x00},
-	{0x00, 0x00, 0x0B, 0x00, 0x00, 0x00, 0x00, 0x00}};
+*/
 
-static endpoint_t endpoint1 =
-	{
-		.rx_buffer_even = endpoint_1_rx_buf[0],
-		.rx_buffer_odd = endpoint_1_rx_buf[1],
-		.tx_buffer_even = endpoint_1_tx_buf[0],
-		.tx_buffer_odd = endpoint_1_tx_buf[1],
-		.tx_buffer = EVEN,
-		.tx_data01_field = DATA0,
-		.tx_data = NULL,
-		.buffer_size = ENDPOINT1_SIZE,
-		.handler = endpoint1_handler};
+/*----------------------------------------------------------------------------
+  MAIN function
+ *----------------------------------------------------------------------------*/
+int main (void) {
 
-int main()
-{
-	uint16_t delay = 0xfF;
+	Init_Debug_Signals();
 	Init_RGB_LEDs();
-	Control_RGB_LEDs(0, 0, 0);
-	usb_init();
-	USB_SetEndpoint(1, &endpoint1);
-	
-	while(delay--);
-	
-	//while (1)
-	{
-		int i=0;
-		for(i=0; i<8; i++)
-		{
-			wait = 1;
-			endpoint1.tx_data = report[i];
-			endpoint1.tx_data_length = ENDPOINT1_SIZE;
-			usb_endpoint_prepare_transmit(1);
-			while(wait);
-		}
-	}
-	return 1;
-}
+	Control_RGB_LEDs(0,0,0);			
 
-static void endpoint1_handler(uint8_t endpoint_number, uint8_t token_pid, buffer_descriptor_t *bd)
-{
-	endpoint_t *ep = endpoints[endpoint_number];
-	switch (token_pid)
-	{
-	case PID_SETUP:
-		Control_RGB_LEDs(0, 0, 1);
-		break;
-	case PID_IN:
-		if(ep->tx_data_length > 0)
-				usb_endpoint_prepare_transmit(1);
-		wait = 0;
-		Control_RGB_LEDs(0, 1, 0);
-		break;
-	case PID_OUT:
-		Control_RGB_LEDs(0, 1, 1);
-		break;
-	case PID_SOF:
-		Control_RGB_LEDs(1, 0, 0);
-		break;
-	default:
-		Control_RGB_LEDs(1, 0, 1);
-		break;
+	LCD_Init();
+	LCD_Text_Init(1);
+	LCD_Erase();
+
+	Delay(70);
+	LCD_Erase();
+
+	usb_init();
+	i2c_init();											// init I2C peripheral
+	if (!init_mma()) {							// init accelerometer
+		I2C_OK = 0;	// code won't read accelerometer
+		// Initialize variables for fake data
+		acc_X = 0;
+		acc_Y = 0;
+		acc_Z = -4000;
+	} else {
+		I2C_OK = 1;
 	}
+
+	
+	osKernelInitialize();
+	Create_OS_Objects();
+	EventRecorderInitialize(EventRecordAll, 1U);
+	osKernelStart();	
+	while(1);
 }

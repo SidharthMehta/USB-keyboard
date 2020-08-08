@@ -41,6 +41,10 @@ static enum setup_state usb_endp_setup_handler(uint8_t endpoint_number, usb_setu
 void usb_init(void);
 static void init_buffer_descriptor(uint8_t endpoint_number);
 static void usb0_endpoint0_handler(uint8_t endpoint_number, uint8_t token_pid, buffer_descriptor_t *bd);
+static void usb0_endpoint1_handler(uint8_t endpoint_number, uint8_t token_pid, buffer_descriptor_t *bd);
+static void usb0_endpoint2_handler(uint8_t endpoint_number, uint8_t token_pid, buffer_descriptor_t *bd);
 void USB_SetEndpoint(uint8_t index, endpoint_t *endpoint);
 void buffer_descriptor_rx_release(buffer_descriptor_t *bd, uint8_t bufferSize);
+void Thread_USB_keyboard(void * arg);
+void Thread_USB_mouse(void * arg);
 #endif

@@ -1,9 +1,9 @@
 
 /*
- * Auto generated Run-Time-Environment Configuration File
+ * Auto generated Run-Time-Environment Component Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'USB' 
+ * Project: 'TFT-TS-BL-Profiler-RTX-CMSIS' 
  * Target:  'Target 1' 
  */
 
@@ -16,6 +16,7 @@
  */
 #define CMSIS_device_header "MKL25Z4.h"
 
-
+#define RTE_CMSIS_RTOS                  /* CMSIS-RTOS */
+        #define RTE_CMSIS_RTOS_RTX              /* CMSIS-RTOS Keil RTX */
 
 #endif /* RTE_COMPONENTS_H */

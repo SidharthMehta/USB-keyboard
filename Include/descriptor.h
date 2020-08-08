@@ -4,8 +4,9 @@
 #include <stdint.h>
 #include <stddef.h>
 
-#define STRING_DESCRIPTORS 6
-#define REPORT_DESCRIPTORS 63
+#define STRING_DESCRIPTORS 7
+#define REPORT_DESCRIPTORS_KEYBOARD 63
+#define REPORT_DESCRIPTORS_MOUSE 50
 
 /* bmRequestType*/
 #define USB_REQUEST_TYPE_DIR_MASK (0x80U)
@@ -219,9 +220,12 @@ typedef __packed struct
 typedef __packed struct
 {
     usb_configuration_descriptor_t configuration_descriptor;
-    usb_interface_descriptor_t interface_descriptor;
-    usb_hid_descriptor_t hid_descriptor;
-    usb_endpoint_descriptor_t endpoint_descriptor;
+    usb_interface_descriptor_t interface_descriptor_1;
+    usb_hid_descriptor_t hid_descriptor_1;
+    usb_endpoint_descriptor_t endpoint_descriptor_1;
+	  usb_interface_descriptor_t interface_descriptor_2;
+    usb_hid_descriptor_t hid_descriptor_2;
+    usb_endpoint_descriptor_t endpoint_descriptor_2;
 } usb_configuration_t;
 
 typedef struct
@@ -233,6 +237,6 @@ typedef struct
 extern const descriptor_entry_t string_descriptors[STRING_DESCRIPTORS];
 extern const usb_device_descriptor_t device_descriptor;
 extern const usb_configuration_t configuration;
-extern const uint8_t report_descriptor[REPORT_DESCRIPTORS];
-
+extern const uint8_t report_descriptor_keyboard[REPORT_DESCRIPTORS_KEYBOARD];
+extern const uint8_t report_descriptor_mouse[REPORT_DESCRIPTORS_MOUSE];
 #endif
